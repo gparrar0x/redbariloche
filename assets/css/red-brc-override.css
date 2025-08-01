@@ -1,0 +1,116 @@
+/* Red BRC Branding Override */
+/* Este archivo contiene los estilos personalizados para Red BRC */
+
+/* Variables CSS para los colores de Red BRC */
+:root {
+  --red-brc-orange: #FF6B35;
+  --red-brc-yellow: #FFD93D;
+  --red-brc-pink: #FF69B4;
+  --red-brc-purple: #8A2BE2;
+  --red-brc-neon-green: #39FF14;
+  --red-brc-dark: #1A1A1A;
+  --red-brc-white: #FFFFFF;
+}
+
+/* Header con gradiente animado */
+header.masthead {
+  background: linear-gradient(135deg, var(--red-brc-orange), var(--red-brc-yellow), var(--red-brc-pink), var(--red-brc-purple)) !important;
+  background-size: 400% 400% !important;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navegación personalizada */
+.navbar-custom {
+  background-color: var(--red-brc-dark) !important;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--red-brc-white) !important;
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  color: var(--red-brc-white) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--red-brc-orange) !important;
+}
+
+/* Botones con colores de Red BRC */
+.btn-primary {
+  background-color: var(--red-brc-orange) !important;
+  border-color: var(--red-brc-orange) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--red-brc-purple) !important;
+  border-color: var(--red-brc-purple) !important;
+}
+
+/* Títulos de sección */
+section h2.section-heading {
+  color: var(--red-brc-orange) !important;
+}
+
+/* Iconos de servicios */
+.service-box .fa-stack-1x {
+  color: var(--red-brc-purple) !important;
+}
+
+/* Elementos del portafolio */
+.portfolio-caption {
+  background-color: var(--red-brc-dark) !important;
+}
+
+.portfolio-caption h4 {
+  color: var(--red-brc-orange) !important;
+}
+
+/* Timeline */
+.timeline-image {
+  background-color: var(--red-brc-orange) !important;
+}
+
+/* Sección de equipo */
+.team-member h4 {
+  color: var(--red-brc-purple) !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--red-brc-dark) !important;
+  color: var(--red-brc-white) !important;
+}
+
+footer .social-buttons a {
+  background-color: var(--red-brc-orange) !important;
+  color: var(--red-brc-white) !important;
+}
+
+footer .social-buttons a:hover {
+  background-color: var(--red-brc-purple) !important;
+}
+
+/* Elementos destacados */
+.highlight {
+  color: var(--red-brc-neon-green) !important;
+  font-weight: bold;
+}
+
+/* Clases de utilidad para colores */
+.text-red-brc-orange { color: var(--red-brc-orange) !important; }
+.text-red-brc-purple { color: var(--red-brc-purple) !important; }
+.text-red-brc-neon { color: var(--red-brc-neon-green) !important; }
+
+.bg-red-brc-dark { background-color: var(--red-brc-dark) !important; }
+.bg-red-brc-gradient { 
+  background: linear-gradient(135deg, var(--red-brc-orange), var(--red-brc-yellow), var(--red-brc-pink), var(--red-brc-purple)) !important;
+} 

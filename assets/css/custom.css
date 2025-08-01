@@ -1,0 +1,120 @@
+/* Red BRC Branding Colors */
+:root {
+  --red-brc-orange: #FF6B35;
+  --red-brc-yellow: #FFD93D;
+  --red-brc-pink: #FF69B4;
+  --red-brc-purple: #8A2BE2;
+  --red-brc-neon-green: #39FF14;
+  --red-brc-dark: #1A1A1A;
+  --red-brc-white: #FFFFFF;
+}
+
+/* Header styling */
+header.masthead {
+  background: linear-gradient(135deg, var(--red-brc-orange), var(--red-brc-yellow), var(--red-brc-pink), var(--red-brc-purple));
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navigation styling */
+.navbar-custom {
+  background-color: var(--red-brc-dark);
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--red-brc-white);
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  color: var(--red-brc-white) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--red-brc-orange) !important;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--red-brc-orange);
+  border-color: var(--red-brc-orange);
+}
+
+.btn-primary:hover {
+  background-color: var(--red-brc-purple);
+  border-color: var(--red-brc-purple);
+}
+
+/* Section headings */
+section h2.section-heading {
+  color: var(--red-brc-orange);
+}
+
+/* Service icons */
+.service-box .fa-stack-1x {
+  color: var(--red-brc-purple);
+}
+
+/* Portfolio items */
+.portfolio-caption {
+  background-color: var(--red-brc-dark);
+}
+
+.portfolio-caption h4 {
+  color: var(--red-brc-orange);
+}
+
+/* Timeline styling */
+.timeline-image {
+  background-color: var(--red-brc-orange);
+}
+
+/* Team section */
+.team-member h4 {
+  color: var(--red-brc-purple);
+}
+
+/* Contact section */
+.contact-info {
+  background-color: var(--red-brc-dark);
+  color: var(--red-brc-white);
+}
+
+/* Footer */
+footer {
+  background-color: var(--red-brc-dark);
+  color: var(--red-brc-white);
+}
+
+footer .social-buttons a {
+  background-color: var(--red-brc-orange);
+  color: var(--red-brc-white);
+}
+
+footer .social-buttons a:hover {
+  background-color: var(--red-brc-purple);
+}
+
+/* Highlight elements */
+.highlight {
+  color: var(--red-brc-neon-green);
+  font-weight: bold;
+}
+
+/* Custom text colors */
+.text-red-brc-orange { color: var(--red-brc-orange); }
+.text-red-brc-purple { color: var(--red-brc-purple); }
+.text-red-brc-neon { color: var(--red-brc-neon-green); }
+
+/* Background colors */
+.bg-red-brc-dark { background-color: var(--red-brc-dark); }
+.bg-red-brc-gradient { 
+  background: linear-gradient(135deg, var(--red-brc-orange), var(--red-brc-yellow), var(--red-brc-pink), var(--red-brc-purple));
+} 

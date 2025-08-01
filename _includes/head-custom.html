@@ -1,0 +1,31 @@
+<!-- Red BRC Custom CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/red-brc-override.css' | relative_url }}">
+
+<!-- Google Fonts para Red BRC -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* Fuentes personalizadas para Red BRC */
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-accent: 'Dancing Script', cursive;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.navbar-brand, h1, h2, h3 {
+  font-family: var(--font-accent);
+}
+
+/* Logo personalizado para Red BRC */
+.navbar-brand::before {
+  content: "Red BRC";
+  background: linear-gradient(135deg, var(--red-brc-orange), var(--red-brc-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+</style> 
