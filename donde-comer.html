@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Red BRC">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dónde comer en Bariloche - Los mejores restaurantes, cafés y lugares gastronómicos de la ciudad de los lagos.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Dónde comer en Bariloche | Red BRC - Restaurantes y Gastronomía</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- Custom Red BRC Styles -->
+    <style>
+      :root {
+        --red-brc-purple: #8B5CF6;
+        --red-brc-orange: #F97316;
+        --red-brc-yellow: #F59E0B;
+        --red-brc-neon-green: #10B981;
+        --red-brc-dark: #1F2937;
+        --red-brc-darker: #111827;
+        --red-brc-white: #FFFFFF;
+      }
+      
+      body {
+        background: var(--red-brc-darker);
+        color: var(--red-brc-white);
+      }
+      
+      .header-area {
+        background: rgba(31, 41, 55, 0.95);
+        backdrop-filter: blur(10px);
+      }
+      
+      .main-nav .nav li a {
+        color: var(--red-brc-white);
+        transition: color 0.3s ease;
+      }
+      
+      .main-nav .nav li a:hover,
+      .main-nav .nav li a.active {
+        color: var(--red-brc-purple);
+      }
+      
+      .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--red-brc-white);
+        text-decoration: none;
+      }
+      
+      .logo span {
+        color: var(--red-brc-purple);
+      }
+      
+      .page-heading {
+        background: linear-gradient(135deg, var(--red-brc-darker) 0%, var(--red-brc-dark) 100%);
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .page-heading::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        opacity: 0.3;
+      }
+      
+      .page-heading h6 {
+        color: var(--red-brc-purple);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      
+      .page-heading h2 {
+        background: linear-gradient(45deg, var(--red-brc-purple), var(--red-brc-orange));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+      }
+      
+      .restaurant-card {
+        background: rgba(31, 41, 55, 0.8);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        border: 1px solid rgba(139, 92, 246, 0.2);
+      }
+      
+      .restaurant-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--red-brc-purple);
+        box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
+      }
+      
+      .restaurant-card .content {
+        padding: 25px;
+        background: rgba(31, 41, 55, 0.95);
+      }
+      
+      .restaurant-card .content h4 {
+        color: var(--red-brc-white);
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      
+      .restaurant-card .content p {
+        color: #9CA3AF;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+      
+      .restaurant-card .content .rating {
+        color: var(--red-brc-yellow);
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      
+      .restaurant-card .content .price {
+        color: var(--red-brc-neon-green);
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      
+      .main-button a {
+        background: linear-gradient(45deg, var(--red-brc-orange), var(--red-brc-yellow));
+        color: var(--red-brc-white);
+        transition: all 0.3s ease;
+      }
+      
+      .main-button a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+      }
+      
+      .section-heading h2 {
+        color: var(--red-brc-white);
+        font-weight: 700;
+      }
+      
+      .section-heading h2 em {
+        color: var(--red-brc-purple);
+        font-style: normal;
+      }
+      
+      .line-dec {
+        background: linear-gradient(45deg, var(--red-brc-purple), var(--red-brc-orange));
+        height: 3px;
+        width: 50px;
+        margin: 0 auto 20px;
+        border-radius: 2px;
+      }
+      
+      .category-filter {
+        background: rgba(31, 41, 55, 0.8);
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+      
+      .category-filter ul li {
+        color: var(--red-brc-white);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin: 5px;
+      }
+      
+      .category-filter ul li:hover,
+      .category-filter ul li.active {
+        background: var(--red-brc-purple);
+        color: var(--red-brc-white);
+      }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        Red <span>BRC</span>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="explore.html">Qué Hacer</a></li>
+                        <li><a href="donde-comer.html" class="active">Dónde Comer</a></li>
+                        <li><a href="donde-ir.html">A Dónde Ir</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Red BRC</h6>
+          <h2>Dónde comer en Bariloche</h2>
+          <span>Inicio > <a href="#">Dónde Comer</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <div class="line-dec"></div>
+          <h2>Los mejores <em>Restaurantes</em> de Bariloche</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filtros de categorías -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="category-filter">
+          <ul>
+            <li class="active" data-filter="*">Todos</li>
+            <li data-filter=".gourmet">Gourmet</li>
+            <li data-filter=".tradicional">Tradicional</li>
+            <li data-filter=".cafe">Café</li>
+            <li data-filter=".pizza">Pizza</li>
+            <li data-filter=".chocolate">Chocolate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurantes -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-01.jpg" alt="Restaurante Gourmet" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>El Boliche de Alberto</h4>
+            <p>Restaurante gourmet con vista al lago Nahuel Huapi. Especialidad en carnes patagónicas y pescados frescos.</p>
+            <div class="rating">★★★★★</div>
+            <div class="price">$$$ - Alto</div>
+            <div class="main-button">
+              <a href="#">Ver Menú</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-02.jpg" alt="Café" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>Café Turista</h4>
+            <p>Café tradicional con más de 50 años de historia. Famoso por sus medialunas y chocolate caliente.</p>
+            <div class="rating">★★★★☆</div>
+            <div class="price">$ - Económico</div>
+            <div class="main-button">
+              <a href="#">Ver Menú</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-03.jpg" alt="Pizzería" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>Pizzería El Rey</h4>
+            <p>Las mejores pizzas de Bariloche con masa artesanal y ingredientes frescos de la región.</p>
+            <div class="rating">★★★★☆</div>
+            <div class="price">$$ - Moderado</div>
+            <div class="main-button">
+              <a href="#">Ver Menú</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-04.jpg" alt="Chocolatería" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>Chocolatería Rapanui</h4>
+            <p>Chocolates artesanales y helados caseros. Una parada obligada para los amantes del chocolate.</p>
+            <div class="rating">★★★★★</div>
+            <div class="price">$$ - Moderado</div>
+            <div class="main-button">
+              <a href="#">Ver Productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-01.jpg" alt="Restaurante Tradicional" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>La Marmita</h4>
+            <p>Restaurante tradicional patagónico con platos típicos como cordero al asador y trucha del lago.</p>
+            <div class="rating">★★★★☆</div>
+            <div class="price">$$$ - Alto</div>
+            <div class="main-button">
+              <a href="#">Ver Menú</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="restaurant-card">
+          <img src="assets/images/featured-02.jpg" alt="Café" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="content">
+            <h4>Café del Centro</h4>
+            <p>Café moderno en el centro de Bariloche con excelente café de especialidad y pastelería artesanal.</p>
+            <div class="rating">★★★★☆</div>
+            <div class="price">$$ - Moderado</div>
+            <div class="main-button">
+              <a href="#">Ver Menú</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="#">Red BRC</a> - Todos los derechos reservados.
+          &nbsp;&nbsp;
+          Desarrollado con ❤️ para la comunidad de Bariloche</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html> 
