@@ -25,13 +25,10 @@
     <!-- Custom Red BRC Styles -->
     <style>
       :root {
-        --red-brc-purple: #8B5CF6;
-        --red-brc-orange: #F97316;
-        --red-brc-yellow: #F59E0B;
-        --red-brc-neon-green: #10B981;
-        --red-brc-dark: #1F2937;
-        --red-brc-darker: #111827;
+        --red-brc-purple: #7300A0;
         --red-brc-white: #FFFFFF;
+        --red-brc-dark: #000000;
+        --red-brc-darker: #000000;
       }
       
       body {
@@ -40,7 +37,7 @@
       }
       
       .header-area {
-        background: rgba(31, 41, 55, 0.95);
+        background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(10px);
       }
       
@@ -55,20 +52,16 @@
       }
       
       .main-banner {
-        background: linear-gradient(135deg, var(--red-brc-darker) 0%, var(--red-brc-dark) 100%);
+        background: url('assets/images/heading-bg.jpg') center center / cover no-repeat;
         position: relative;
         overflow: hidden;
       }
-      
+
       .main-banner::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-        opacity: 0.3;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
       }
       
       .header-text h6 {
@@ -79,12 +72,37 @@
       }
       
       .header-text h2 {
-        background: linear-gradient(45deg, var(--red-brc-purple), var(--red-brc-orange));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: 700;
+        color: var(--red-brc-white);
+        font-weight: 800;
       }
+
+      .header-text .subtitle {
+        font-size: 1.1rem;
+        max-width: 900px;
+        margin: 20px auto 0;
+        color: #E5E7EB;
+      }
+
+       /* Hero-specific button contrast improvements */
+       .main-banner .buttons .border-button a {
+         border-color: #FFFFFF;
+         color: #FFFFFF;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+       }
+       .main-banner .buttons .border-button a:hover {
+         background: #FFFFFF;
+         color: var(--red-brc-purple);
+       }
+       .main-banner .buttons .main-button a {
+         background: #FFFFFF;
+         color: var(--red-brc-purple);
+         border-color: #FFFFFF;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+       }
+       .main-banner .buttons .main-button a:hover {
+         background: var(--red-brc-purple);
+         color: #FFFFFF;
+       }
       
       .border-button a {
         border: 2px solid var(--red-brc-purple);
@@ -98,14 +116,14 @@
       }
       
       .main-button a {
-        background: linear-gradient(45deg, var(--red-brc-orange), var(--red-brc-yellow));
+        background: var(--red-brc-purple);
         color: var(--red-brc-white);
         transition: all 0.3s ease;
       }
       
       .main-button a:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+        box-shadow: 0 10px 25px rgba(115, 0, 160, 0.3);
       }
       
       .logo {
@@ -118,9 +136,16 @@
       .logo span {
         color: var(--red-brc-purple);
       }
+
+       /* Logo image sizing */
+       .header-area .main-nav .logo img {
+         max-height: 44px;
+         width: auto;
+         display: block;
+       }
       
              .new-tag {
-         background: var(--red-brc-neon-green);
+         background: var(--red-brc-purple);
          color: var(--red-brc-white);
          padding: 4px 12px;
          border-radius: 20px;
@@ -135,8 +160,8 @@
        }
        
        .categories .item {
-         background: rgba(31, 41, 55, 0.8);
-         border: 1px solid rgba(139, 92, 246, 0.2);
+         background: rgba(0, 0, 0, 0.8);
+         border: 1px solid rgba(115, 0, 160, 0.2);
          border-radius: 15px;
          padding: 30px 20px;
          text-align: center;
@@ -147,7 +172,7 @@
        .categories .item:hover {
          transform: translateY(-5px);
          border-color: var(--red-brc-purple);
-         box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+         box-shadow: 0 10px 30px rgba(115, 0, 160, 0.3);
        }
        
        .categories .item h4 {
@@ -173,7 +198,7 @@
        }
        
        .line-dec {
-         background: linear-gradient(45deg, var(--red-brc-purple), var(--red-brc-orange));
+         background: var(--red-brc-purple);
          height: 3px;
          width: 50px;
          margin: 0 auto 20px;
@@ -181,7 +206,7 @@
        }
        
        .collections .item {
-         background: rgba(31, 41, 55, 0.8);
+         background: rgba(0, 0, 0, 0.8);
          border-radius: 15px;
          overflow: hidden;
          transition: all 0.3s ease;
@@ -189,12 +214,12 @@
        
        .collections .item:hover {
          transform: translateY(-5px);
-         box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
+         box-shadow: 0 15px 40px rgba(115, 0, 160, 0.2);
        }
        
        .collections .down-content {
          padding: 25px;
-         background: rgba(31, 41, 55, 0.95);
+         background: rgba(0, 0, 0, 0.95);
        }
        
        .collections .down-content h4 {
@@ -248,8 +273,8 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        Red <span>BRC</span>
+                    <a href="index.html" class="logo" aria-label="Red BRC">
+                        <img src="assets/images/logo.png" alt="Red BRC" />
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -272,15 +297,14 @@
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
-  <div class="main-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
+  <section class="main-banner d-flex align-items-center" style="min-height: 80vh; background-image: url('assets/images/heading-bg.jpg'); background-size: cover; background-position: center;">
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-10">
           <div class="header-text">
-            <h6>Red BRC</h6>
-            <h2>Qué hacer en Bariloche</h2>
-            <p>Somos una red creativa de comunicación enfocada en contenido local auténtico. Especialistas en eventos, actividades, diseño de marcas y noticias locales. Descubre la verdadera esencia de Bariloche a través de nuestros contenidos humanos y experiencias únicas.</p>
-            <div class="buttons">
+            <h2>Red Bariloche</h2>
+            <h6>La red colaborativa que está revolucionando Bariloche. Descubre experiencias auténticas y únete a la comunidad local más viral.</h6>
+            <div class="buttons" style="justify-content:center;">
               <div class="border-button">
                 <a href="explore.html">Explorar Actividades</a>
               </div>
@@ -290,20 +314,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 offset-lg-1">
-          <div class="owl-banner owl-carousel">
-            <div class="item">
-              <img src="assets/images/banner-01.png" alt="Bariloche">
-              <div class="new-tag">NEW</div>
-            </div>
-            <div class="item">
-              <img src="assets/images/banner-02.png" alt="">
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- ***** Main Banner Area End ***** -->
   
   <div class="categories-collections">
@@ -333,7 +346,7 @@
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="icon">
-                    <i class="fa fa-paint-brush" style="font-size: 3rem; color: var(--red-brc-orange);"></i>
+                    <i class="fa fa-paint-brush" style="font-size: 3rem; color: var(--red-brc-purple);"></i>
                   </div>
                   <h4>Diseño de Marcas</h4>
                   <p>Gestión y diseño de identidad visual para tu negocio local</p>
@@ -345,7 +358,7 @@
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="icon">
-                    <i class="fa fa-newspaper-o" style="font-size: 3rem; color: var(--red-brc-yellow);"></i>
+                    <i class="fa fa-newspaper-o" style="font-size: 3rem; color: var(--red-brc-purple);"></i>
                   </div>
                   <h4>Contenido Local</h4>
                   <p>Noticias y contenido auténtico sobre Bariloche y la región</p>
@@ -357,7 +370,7 @@
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="icon">
-                    <i class="fa fa-users" style="font-size: 3rem; color: var(--red-brc-neon-green);"></i>
+                    <i class="fa fa-users" style="font-size: 3rem; color: var(--red-brc-purple);"></i>
                   </div>
                   <h4>Comunidad</h4>
                   <p>Conectamos personas y creamos experiencias únicas</p>

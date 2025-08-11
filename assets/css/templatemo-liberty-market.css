@@ -79,7 +79,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background-color: #1e1e1e;
+  background-color: #7300A0;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -124,12 +124,12 @@ body {
 }
 
 ::selection {
-  background: #7453fc;
+  background: #7300A0;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #7453fc;
+  background: #7300A0;
   color: #fff;
 }
 
@@ -137,7 +137,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: transparent;
-  border: 1px solid #7453fc;
+  border: 1px solid #7300A0;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -161,15 +161,15 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #7453fc;
+  background-color: #7300A0;
   color: #fff;
 }
 
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -194,7 +194,7 @@ body {
 
 .main-button a:hover {
   background-color: #fff;
-  color: #7453fc;
+  color: #7300A0;
   border: 1px solid #fff;
 }
 
@@ -213,7 +213,7 @@ section {
 .section-heading .line-dec {
   width: 100px;
   height: 2px;
-  background-color: #7453fc;
+  background-color: #7300A0;
   margin: 0 auto 30px auto;
 }
 
@@ -227,7 +227,7 @@ section {
 }
 
 .section-heading h2 em {
-  color: #7453fc;
+  color: #7300A0;
   font-style: normal;
 }
 
@@ -243,7 +243,7 @@ Pre-loader Style
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.98);
+  background-color: #7300A0;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -304,7 +304,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #7453fc;
+  background: #7300A0;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -327,7 +327,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #7453fc;
+  background: #7300A0;
   border-radius: 50%;
 }
 
@@ -346,7 +346,7 @@ Header Style
   top: 0!important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px rgba(19, 18, 65, 0.15)!important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -428,7 +428,7 @@ Header Style
   font-weight: 500;
   font-size: 14px;
   text-transform: capitalize;
-  color: #2a2a2a;
+  color: #7300A0;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -447,7 +447,7 @@ Header Style
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   color: #fff;
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -485,7 +485,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #7453fc;
+  background-color: #7300A0;
   display: block;
   position: absolute;
   width: 30px;
@@ -496,7 +496,7 @@ Header Style
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -505,7 +505,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #7453fc;
+  background-color: #7300A0;
   display: block;
   position: absolute;
   width: 30px;
@@ -516,7 +516,7 @@ Header Style
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -557,11 +557,11 @@ Header Style
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -569,11 +569,11 @@ Header Style
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .header-area.header-sticky {
@@ -624,14 +624,14 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #7453fc!important;
+    color: #7300A0!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: #FFFFFF;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -667,12 +667,12 @@ Header Style
     margin-top: 70px !important;
   }
   .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #FFFFFF;
   }
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #FFFFFF;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -682,11 +682,11 @@ Header Style
     padding: 0px !important;
     border: none !important;
     background: #fff !important;
-    color: #1e1e1e !important;
+    color: #7300A0 !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #fff !important;
-    color: #7453fc!important;
+    color: #7300A0!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -711,7 +711,7 @@ Header Style
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
+    color: #7300A0;
     right: 30px;
     font-size: 14px;
     top: 15px;
@@ -732,9 +732,9 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 290px;
-  padding-bottom: 240px;
-  background-color: #2a2a2a;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #7300A0;
 }
 
 .main-banner h6 {
@@ -793,7 +793,7 @@ Banner Style
   line-height: 46px;
   font-size: 24px;
   display: inline-block;
-  color: #7453fc;
+  color: #7300A0;
   background-color: #fff;
   border-radius: 50%;
   opacity: 1;
@@ -832,11 +832,11 @@ Categories & Collections Style
 }
 
 .categories .item {
-  background-color: #282b2f;
+  background-color: #7300A0;
   text-align: center;
   padding: 30px;
   border-radius: 20px;
-  border: 1px solid #404245;
+  border: 1px solid #7300A0;
   position: relative;
 }
 
@@ -865,7 +865,7 @@ Categories & Collections Style
   height: 46px;
   line-height: 46px;
   background-color: #fff;
-  color: #7453fc;
+  color: #7300A0;
   border-radius: 50%;
   font-size: 18px;
   position: absolute;
@@ -878,7 +878,7 @@ Categories & Collections Style
 }
 
 .categories .item .icon-button a:hover {
-  background-color: #7453fc;
+  background-color: #7300A0;
   color: #fff;
 }
 
@@ -897,8 +897,8 @@ Categories & Collections Style
 }
 
 .collections .item .down-content {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 30px;
@@ -943,7 +943,7 @@ Categories & Collections Style
 .collections .item .main-button a:hover {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #7453fc;
+  color: #7300A0;
 }
 
 .collections .owl-nav {
@@ -972,7 +972,7 @@ Categories & Collections Style
   line-height: 46px;
   font-size: 24px;
   display: inline-block;
-  color: #7453fc;
+  color: #7300A0;
   background-color: #fff;
   border-radius: 50%;
   opacity: 1;
@@ -1076,7 +1076,7 @@ Create NFT Style
 }
 
 .create-nft .item a {
-  color: #3CF;
+  color: #FFFFFF;
 }
 
 
@@ -1132,12 +1132,12 @@ Currently Market Style
 
 .currently-market .filters ul li.active,
 .currently-market .filters ul li:hover {
-  background-color: #7453fc;
+  background-color: #7300A0;
 }
 
 .currently-market .item {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   border-radius: 20px;
   padding: 30px;
   display: flex;
@@ -1170,7 +1170,7 @@ Currently Market Style
 }
 
 .currently-market .item .right-content span.author a {
-  color: #7453fc;
+  color: #7300A0;
   font-weight: 700;
   margin-top: 5px;
 }
@@ -1215,8 +1215,8 @@ Currently Market Style
 .currently-market .item .text-button a {
   font-size: 15px;
   font-weight: 700;
-  color: #7453fc;
-  border-bottom: 1px solid #7453fc;
+  color: #7300A0;
+  border-bottom: 1px solid #7300A0;
 }
 
 
@@ -1228,8 +1228,7 @@ Footer Style
 */
 
 footer {
-  background: rgb(125,90,254);
-  background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+  background: #7300A0;
   text-align: center;
   padding: 25px 0px;
 }
@@ -1267,7 +1266,7 @@ Page Heading Style
   background-size: cover;
   padding-top: 250px;
   text-align: center;
-  background-color: #2a2a2a;
+  background-color: #7300A0;
 }
 
 .page-heading h6 {
@@ -1286,7 +1285,7 @@ Page Heading Style
 }
 
 .page-heading span {
-  color: #8a75da;
+  color: #7300A0;
   font-size: 15px;
 }
 
@@ -1371,7 +1370,7 @@ Explore Style
 }
 
 .featured-explore .item .hover-effect .content span.author a {
-  color: #7453fc;
+  color: #7300A0;
   font-weight: 700;
   margin-top: 5px;
 }
@@ -1403,7 +1402,7 @@ Explore Style
   font-size: 22px;
   font-weight: 700;
   display: inline-block;
-  color: #7453fc;
+  color: #7300A0;
   background-color: #fff;
   border-radius: 50%;
   opacity: 0.5;
@@ -1454,7 +1453,7 @@ Explore Style
 }
 
 .discover-items #search-form select option {
-  background-color: #2a2a2a;
+  background-color: #7300A0;
 }
 
 .discover-items #search-form input::placeholder,
@@ -1465,8 +1464,8 @@ Explore Style
 .discover-items #search-form button {
   font-size: 14px;
   color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   height: 46px;
   line-height: 46px;
   text-align: center;
@@ -1494,13 +1493,13 @@ Explore Style
 
 .discover-items #search-form button:hover {
   background-color: #fff;
-  color: #7453fc;
+  color: #7300A0;
   border: 1px solid #fff;
 }
 
 .discover-items .item span.banner {
   font-size: 15px;
-  background-color: #7453fc;
+  background-color: #7300A0;
   color: #fff;
   font-weight: 500;
   padding: 5px 15px;
@@ -1542,8 +1541,8 @@ Explore Style
 }
 
 .discover-items .item {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   padding: 30px;
   border-radius: 20px;
   position: relative;
@@ -1665,7 +1664,7 @@ Details Page Style
 }
 
 .item-details-page span.author a {
-  color: #7453fc;
+  color: #7300A0;
   font-weight: 700;
   margin-top: 5px;
 }
@@ -1682,7 +1681,7 @@ Details Page Style
 
 .item-details-page span strong {
   font-size: 20px;
-  color: #7453fc;
+  color: #7300A0;
 }
 
 .item-details-page p {
@@ -1702,7 +1701,7 @@ Details Page Style
 .item-details-page span.ends em,
 .item-details-page span.owner em {
   font-style: normal;
-  color: #afafaf;
+  color: #FFFFFF;
 }
 
 .item-details-page form {
@@ -1711,7 +1710,7 @@ Details Page Style
 
 
 .item-details-page form label {
-  color: #afafaf;
+  color: #FFFFFF;
   font-size: 15px;
   font-weight: 500;
   margin-right: 10px;
@@ -1720,7 +1719,7 @@ Details Page Style
 .item-details-page form input {
   width: 100px;
   height: 46px;
-  border: 1px solid #7453fc;
+  border: 1px solid #7300A0;
   outline: none;
   border-radius: 23px;
   background-color: transparent;
@@ -1736,8 +1735,8 @@ Details Page Style
 .item-details-page button {
   font-size: 14px;
   color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -1762,7 +1761,7 @@ Details Page Style
 
 .item-details-page button:hover {
   background-color: #fff;
-  color: #7453fc;
+  color: #7300A0;
   border: 1px solid #fff;
 }
 
@@ -1783,7 +1782,7 @@ Details Page Style
 }
 
 .current-bid .mini-heading h4 {
-  background-color: #7453fc;
+  background-color: #7300A0;
   display: inline-block;
   font-size: 20px;
   padding: 10px 20px;
@@ -1797,8 +1796,8 @@ Details Page Style
   display: flex;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
 }
 
 .current-bid .item .left-img {
@@ -1818,7 +1817,7 @@ Details Page Style
 
 .current-bid .item .right-content a {
   font-size: 15px;
-  color: #7453fc;
+  color: #7300A0;
   font-weight: 700;
 }
 
@@ -1837,14 +1836,14 @@ Details Page Style
 
 .current-bid .item .right-content h6 em {
   font-size: 18px;
-  color: #7453fc;
+  color: #7300A0;
   font-style: normal;
   font-weight: 700;
 }
 
 .current-bid .item .right-content span.date {
   font-size: 15px;
-  color: #7453fc;
+  color: #7300A0;
 }
 
 
@@ -1875,12 +1874,12 @@ Author Page Style
 
 .author-page .author h4 a {
   font-size: 15px;
-  color: #7453fc;
+  color: #7300A0;
 }
 
 .author-page .right-info {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   padding: 20px 30px;
   border-radius: 20px;
   margin-left: 100px;
@@ -1891,13 +1890,13 @@ Author Page Style
 }
 
 .author-page .right-info i {
-  color: #7453fc;
+  color: #7300A0;
   font-size: 22px;
 }
 
 .author-page .right-info h6 {
   font-size: 20px;
-  color: #7453fc;
+  color: #7300A0;
   margin-top: 4px;
 }
 
@@ -1910,7 +1909,7 @@ Author Page Style
 
 .author-page .right-info h5 {
   font-size: 20px;
-  color: #afafaf;
+  color: #FFFFFF;
   margin-top: 10px;
 }
 
@@ -1958,8 +1957,8 @@ Author Page Style
 }
 
 .author-page .item {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   padding: 30px;
   border-radius: 20px;
   position: relative;
@@ -1994,7 +1993,7 @@ Create Page Style
 */
 
 #contact {
-  background-color: #37393c;
+  background-color: #7300A0;
   border-radius: 20px;
   padding: 60px 30px;
   margin-bottom: 120px;
@@ -2005,15 +2004,15 @@ Create Page Style
   height: 46px;
   text-align: left;
   padding: 0px 15px;
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #7300A0;
+  border: 1px solid #7300A0;
   margin-bottom: 30px;
   font-weight: 500;
-  color: #afafaf;
+  color: #FFFFFF;
 }
 
 #contact input::placeholder {
-  color: #afafaf;
+  color: #FFFFFF;
 }
 
 #contact label {
