@@ -83,6 +83,7 @@
         color: #E5E7EB;
       }
 
+
        /* Hero-specific button contrast improvements */
        .main-banner .buttons .border-button a {
          border-color: #FFFFFF;
@@ -103,6 +104,25 @@
          background: var(--red-brc-purple);
          color: #FFFFFF;
        }
+
+      /* Panel estilo card sobre la imagen del hero */
+      .main-banner .hero-panel {
+        display: inline-block;
+        padding: 28px 32px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+      }
+
+      .main-banner .panel-line {
+        height: 2px;
+        width: 60%;
+        margin: 8px auto 18px;
+        background: rgba(255, 255, 255, 0.55);
+      }
       
       .border-button a {
         border: 2px solid var(--red-brc-purple);
@@ -294,11 +314,14 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-10">
           <div class="header-text">
-            <div class="mb-4">
-              <img src="assets/images/logo-transparente.png" alt="Red BRC" style="max-width: 420px; width: 80%; height: auto;" />
+            <div class="hero-panel text-center">
+              <div class="mb-3">
+                <img src="assets/images/logo-transparente.png" alt="Red BRC" style="max-width: 420px; width: 80%; height: auto;" />
+              </div>
+              <div class="panel-line"></div>
+              <h6 style="margin-top:0">La red colaborativa que está revolucionando Bariloche. Descubre experiencias auténticas y únete a la comunidad local más viral.</h6>
             </div>
-            <h6>La red colaborativa que está revolucionando Bariloche. Descubre experiencias auténticas y únete a la comunidad local más viral.</h6>
-            <div class="buttons" style="justify-content:center;">
+            <div class="buttons" style="justify-content:center; margin-top:18px;">
               <div class="border-button">
                 <a href="explore.html">Explorar Actividades</a>
               </div>
