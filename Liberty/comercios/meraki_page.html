@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Meraki Café</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/fontawesome.css" />
+		<link rel="stylesheet" href="../assets/css/templatemo-liberty-market.css" />
+		<link rel="stylesheet" href="../assets/css/owl.css" />
+		<link rel="stylesheet" href="../assets/css/animate.css" />
+		<style>
+			:root { --rb-purple:#5B2C83; --rb-accent:#7300A0; --rb-card:#ffffff; --rb-shadow:0 10px 20px rgba(0,0,0,.08); --rb-white:#FFFFFF; --rb-purple-dark:#4a2370; }
+			body{color:#1b1b1b; background:#f7f5fb}
+			.page-hero{background:url('../assets/images/heading-bg.jpg') center/cover no-repeat; position:relative; min-height:160px}
+			.page-hero::before{content:''; position:absolute; inset:0; background:rgba(0,0,0,.45)}
+			.page-hero .container{position:relative; z-index:1; padding:36px 0}
+			.card-like{background:var(--rb-card); border:1px solid rgba(0,0,0,.06); border-radius:16px; box-shadow:var(--rb-shadow); padding:16px}
+			.card-like, .card-like p, .card-like h1, .card-like h2, .card-like h3, .card-like h4, .card-like li, .card-like a{color:#1b1b1b !important}
+			.sidebar .card-like + .card-like{margin-top:16px}
+			.button-lib{display:inline-block; padding:12px 20px; border-radius:12px; background:var(--rb-purple); color:#fff; text-decoration:none; border:1px solid var(--rb-purple); box-shadow:0 6px 0 var(--rb-purple-dark), 0 12px 22px rgba(0,0,0,0.18); transition: transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;}
+			.button-lib:hover{background:var(--rb-accent); border-color:var(--rb-accent); box-shadow:0 7px 0 var(--rb-purple-dark), 0 14px 24px rgba(0,0,0,0.22);}
+			.button-lib:active{transform:translateY(3px); box-shadow:0 3px 0 var(--rb-purple-dark), 0 6px 14px rgba(0,0,0,0.18);} 
+			.featured-small{max-width:220px; height:auto; border-radius:12px; box-shadow:var(--rb-shadow)}
+			.content-header{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+			/* Header unificado como index */
+			.header-area { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background .3s ease, box-shadow .3s ease; background: transparent; box-shadow:none; }
+			.header-area.header-sticky { background: transparent; }
+			.header-area.rb-transparent { background: transparent !important; box-shadow: none !important; }
+			.header-area.is-scrolled { background: transparent; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+			.header-area .main-nav { background:#ffffff !important; border-radius:45px !important; box-shadow:0 10px 30px rgba(0,0,0,0.08) !important; margin-top:25px !important; padding:14px 24px !important; transition: background .45s ease, box-shadow .45s ease, margin-top .45s ease, padding .45s ease; display:flex; align-items:center; justify-content:space-between; }
+			.header-area.is-scrolled .main-nav { background: transparent !important; border-radius:0 !important; box-shadow:none !important; margin-top:0 !important; padding:12px 24px !important; }
+			.header-area .main-nav .nav { display:flex !important; align-items:center; gap:12px; margin-left:auto !important; padding-left:0 !important; }
+			.header-area .main-nav .nav li { margin-left:0 !important; }
+			.header-area .main-nav .nav li a { color:#ffffff !important; border-bottom:2px solid transparent; }
+			.header-area .main-nav .nav li a.active, .header-area .main-nav .nav li a:hover { color:#ffffff !important; border-bottom-color: var(--rb-accent); }
+			.header-area .main-nav .nav li a.btn-nav { background: var(--rb-accent); color: var(--rb-white) !important; border-radius:22px; padding:10px 18px; line-height:1; display:inline-block; border:1px solid var(--rb-accent); box-shadow:0 6px 0 var(--rb-purple-dark), 0 10px 20px rgba(0,0,0,0.18); transform:translateY(0); transition: transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease; }
+			.header-area .main-nav .nav li a.btn-nav:hover { background: var(--rb-purple); border-color: var(--rb-purple); box-shadow:0 7px 0 var(--rb-purple-dark), 0 12px 22px rgba(0,0,0,0.2); }
+			.header-area .main-nav .nav li a.btn-nav:active { transform: translateY(3px); box-shadow:0 3px 0 var(--rb-purple-dark), 0 6px 14px rgba(0,0,0,0.18); }
+			.header-area .logo img { max-height:42px; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25)); }
+		</style>
+	</head>
+	<body>
+		<header class="header-area header-sticky rb-transparent">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="main-nav">
+							<a href="../index.html" class="logo"><img src="../assets/images/logo-transparente.png" alt="Red Bariloche" /></a>
+							<ul class="nav scroll-to-section ms-auto">
+								<li><a href="../index.html#comercios" class="btn-nav active">Comercios</a></li>
+								<li><a href="../index.html#servicios" class="btn-nav">Servicios</a></li>
+							</ul>
+							<a class="menu-trigger"><span>Menu</span></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="page-hero">
+			<div class="container">
+				<h1 class="text-white mb-0">Meraki Café</h1>
+				<p class="text-white-50 mb-0">Tu lugar de encuentro. Ice Cream Rolls en Bariloche.</p>
+			</div>
+		</div>
+
+		<main class="py-4">
+			<div class="container">
+				<div class="row g-4">
+					<section class="col-lg-8">
+						<div class="card-like mb-3">
+							<div class="content-header">
+								<img src="../assets/images/logo-meraki.png" alt="Meraki Café" class="featured-small" />
+								<div>
+									<h2 class="mb-2">Sobre nosotros</h2>
+									<p class="mb-0">Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus lobortis.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-like">
+							<h3 class="mb-2">Más información</h3>
+							<p>Semper elementum ullamcorper lacinia natoque aenean scelerisque vel lacinia mollis quam sodales congue.</p>
+						</div>
+					</section>
+
+					<aside class="col-lg-4 sidebar">
+						<div class="card-like">
+							<h3 class="mb-2">Pedí Ahora</h3>
+							<p class="mb-3">Hacé tu pedido y lo llevamos a tu casa.</p>
+							<a href="https://gparrar0x.github.io/superhotdog/" class="button-lib">Pedir Ahora</a>
+						</div>
+						<div class="card-like">
+							<h3 class="mb-2">Dirección</h3>
+							<p class="mb-3">📍 Villegas 242,Bariloche</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.550638176645!2d-71.30935702312001!3d-41.134334571333056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7bb27ef7ec8d%3A0x73c94465b910ade8!2sMeraki13%20%2F%20Bom%20A%C3%A7ai!5e1!3m2!1sen!2sar!4v1755392400522!5m2!1sen!2sar" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</main>
+
+		<!-- ***** Contacto Start (copiado de index) ***** -->
+		<div id="contacto" class="create-nft">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="section-heading">
+							<div class="line-dec"></div>
+							<h2>Contacto.</h2>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="main-button">
+							<a href="https://wa.me/5491132485296?text=Hola%20Red%20Bariloche" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="item first-item">
+							<div class="number"><h6>1</h6></div>
+							<div class="icon"><img src="../assets/images/icon-02.png" alt="Email"></div>
+							<h4>Email</h4>
+							<p><a href="mailto:contacto@redbariloche.com" style="color:#fff; text-decoration:underline;">contacto@redbariloche.com</a></p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="item second-item">
+							<div class="number"><h6>2</h6></div>
+							<div class="icon"><img src="../assets/images/icon-04.png" alt="WhatsApp"></div>
+							<h4>WhatsApp</h4>
+							<p><a href="https://wa.me/5491132485296?text=Hola%20Red%20Bariloche" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">Enviar WhatsApp</a></p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="item">
+							<div class="icon"><img src="../assets/images/icon-06.png" alt="Instagram"></div>
+							<h4>Instagram</h4>
+							<p><a href="https://www.instagram.com/redbariloche/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">@redbariloche</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Contacto End ***** -->
+
+		<footer>
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12">
+				  <p>Copyright © 2025 <a href="#">Red Bariloche</a> Hecho con ❤️ en la Patagonia 🏔️
+				  &nbsp;&nbsp;
+				  Designed by <a title="Skywalking.dev" rel="sponsored" href="https://skywalking.dev" target="_blank">Skywalking.dev</a></p>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+
+		<script src="../vendor/jquery/jquery.min.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/js/isotope.min.js"></script>
+		<script src="../assets/js/owl-carousel.js"></script>
+		<script src="../assets/js/tabs.js"></script>
+		<script src="../assets/js/popup.js"></script>
+		<script src="../assets/js/custom.js"></script>
+		<script>
+			(function(){
+				var header = document.querySelector('.header-area');
+				function onScroll(){
+					var scrolled = window.scrollY || document.documentElement.scrollTop;
+					if(scrolled > 100){
+						header.classList.add('is-scrolled');
+						header.classList.remove('rb-transparent');
+					} else {
+						header.classList.remove('is-scrolled');
+						header.classList.add('rb-transparent');
+					}
+				}
+				window.addEventListener('scroll', onScroll, { passive: true });
+				onScroll();
+			})();
+		</script>
+	</body>
+</html>
